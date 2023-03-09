@@ -1,6 +1,8 @@
 import { appState } from "../AppState.js"
 import { Player } from "../Models/Player.js"
 
+
+
 class PlayersService {
 
 
@@ -9,6 +11,11 @@ class PlayersService {
     appState.players.push(player)
     appState.emit('players')
     console.log(appState.players)
+  }
+
+  setActivePlayer(activePlayer) {
+    let foundPlayer = appState.players.find(p => p.name == activePlayer)
+    appState.activePlayer = foundPlayer
   }
 }
 

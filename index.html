@@ -34,23 +34,23 @@
             <div class="col-7"></div>
             <div class="col-5 p-3">
               <!-- STUB players form -->
-              <section class="row elevation-3 p-3"> 
-                <div  onclick="app.playersController.setActivePlayer()" class="col-6">
-                  <h4>Anastasiia</h4>
+              <section class="row elevation-3 p-3">
+                <div id="players" class="col-6">
+                  <!-- <h4>Anastasiia</h4> -->
                 </div>
                 <div class="col-6">
                   <h4>Hightscore: <span>0</span></h4>
                 </div>
-                  <form action="" onsubmit="app.playersController.createPlayer()">
-                    <label for="player">Player</label>
-                    <input type="text" id="player" name="player">
-                    <button type="submit" class="btn btn-success">Press</button>
-                  </form>
-      
+                <form action="" onsubmit="app.playersController.createPlayer()">
+                  <label for="player">Player</label>
+                  <input type="text" id="player" name="player">
+                  <button type="submit" class="btn btn-success">Press</button>
+                </form>
+
               </section>
 
 
-              
+
             </div>
           </div>
         </div>
