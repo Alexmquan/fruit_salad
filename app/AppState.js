@@ -13,13 +13,17 @@ class AppState extends EventEmitter {
 
   players = [
     new Player({ name: "Anastasiia", score: 0 }),
-    new Player({ name: "Alex", score: 1 })
+    new Player({ name: "Alex", score: 0 })
   ]
+
+  /** @type {import('./Models/Player').Player|null} */
+
+
+  fruits = ['pear', 'apple', 'banana']
+  activeFruit = null
+
+  activePlayer = null
 }
-
-/** @type {import('./Models/Player').Player|null} */
-
-let activePlayer = null
 
 export const appState = new Proxy(new AppState(), {
   get(target, prop) {

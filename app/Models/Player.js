@@ -14,6 +14,16 @@ export class Player {
 
   get ActiveTemplate() {
     return `
+    <div class="col-6 ">
+                  <p>${this.name}</p>
+                </div>
+                <div class="col-6">
+                  <p>Score: <span>${this.score}</span></p>
+                </div>
     `
+  }
+
+  get FruitTemplate() {
+    return ``
   }
 }

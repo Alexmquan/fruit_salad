@@ -13,16 +13,28 @@ function _drawPlayer() {
 
 function _drawActive() {
   let activePlayer = appState.activePlayer
-  setHTML('active')
+  setHTML('active', activePlayer.ActiveTemplate)
+}
+
+function _drawFruit() {
+  let activeFruit = 
 }
 
 export class PlayersController {
   constructor() {
+    this.selectFruit()
     _drawPlayer()
     appState.on('activePlayer', _drawActive)
+    appState.on('')
 
   }
 
+
+  selectFruit() {
+    let newFruit = Math.floor(Math.random() * appState.fruits.length)
+    appState.activeFruit = appState.fruits[newFruit]
+    console.log(appState.activeFruit)
+  }
   createPlayer() {
     window.event.preventDefault()
     console.log("Testing create player")
