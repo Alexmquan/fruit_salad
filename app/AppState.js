@@ -17,8 +17,9 @@ class AppState extends EventEmitter {
   ]
 }
 
+/** @type {import('./Models/Player').Player|null} */
 
-
+let activePlayer = null
 
 export const appState = new Proxy(new AppState(), {
   get(target, prop) {
