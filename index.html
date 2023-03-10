@@ -19,64 +19,63 @@
   <header>
     <nav class="navbar navbar-dark navbar-expand bg-dark text-light no-select">
       <a class="navbar-brand ms-3" href="#">
-        <img src="https://codeworks.blob.core.windows.net/public/assets/img/cw-mark.png" height="45" alt=""
+        <!-- <img src="https://codeworks.blob.core.windows.net/public/assets/img/cw-mark.png" height="45" alt=""
           loading="lazy">
-        <span class="ms-2">fruit_salad</span>
+        <span class="ms-2">Fruit Salad</span> -->
+        <h1>🍉 Fruit Salad</h1>
       </a>
     </nav>
   </header>
   <main class="bg-img">
     <div class="container-fluid">
 
-      <section class="row">
-        <div class="col-12">
-          <div class="row g-3">
-            <div class="col-7">
-              <div id="active" class="row elevation-3">
-                <!-- <div class="col-6 ">
-                  <p>name</p>
+      <section class="row justify-content-evenly reverse">
+      
+        <!-- STUB active player -->
+        <div class="col-8 col-md-7 p-5">
+          <section id="active" class="row justify-content-center">
+            <!-- <div   class="col-5 card elevation-2"> 
+              <div  class="row p-4 ">
+                <div class="col-12 d-md-flex justify-content-between">
+                  <h4>name</h4>
+                  <h4>Score: <span>0</span></h4>
                 </div>
-                <div class="col-6">
-                  <p>Score: <span>0</span></p>
-                </div> -->
-
               </div>
-            </div>
+            </div> -->
+          </section>
 
 
-            <div class="col-5 p-3">
-              <!-- STUB players form -->
-              <section class="row elevation-3 p-3">
-                <div id="players" class="col-6">
-                  <!-- <h4>Anastasiia</h4> -->
-                </div>
-                <div class="col-6">
-                  <h4>Hightscore: <span>0</span></h4>
-                </div>
-                <form action="" onsubmit="app.playersController.createPlayer()">
-                  <label for="player">Player</label>
-                  <input type="text" id="player" name="player">
-                  <button type="submit" class="btn btn-success">Press</button>
-                </form>
+          <!-- STUB game -->
+          <section class="row justify-content-center mt-5">
+            <!-- <form onsubmit=""  class="col-10 bg-white rounded elevation-2 p-5 text-center">
+            <h2 id="active-fruit">🥗</h2>
+            <input id="fruit-input" type="text" class="form-control mt-5" placeholder="Type here..."/>
+            </form> -->
+          </section>
+          
 
-              </section>
-
-
-
-            </div>
-          </div>
         </div>
+
+        <div class="col-md-4 col-8 p-4">
+        <!-- STUB players form -->
+        <form onsubmit="app.playersController.createPlayer()" class="row bg-white rounded elevation-2 p-4">
+          <h3 class="text-center">List of Players</h3>
+          <div class="row py-3">
+            <div id="players" class="col-6 pb-3">
+              <!-- <h4>Anastasiia</h4> -->
+            </div>
+            <div class="col-6">
+              <h4>Hightscore: <span>0</span></h4>
+            </div>
+            <div class="col-9">
+              <input type="text" id="player" name="player" class="form-control" placeholder="New player...">
+            </div>
+            <button type="submit" class="col-3 btn btn-success">Add</button>
+          </div>
+        </form>
+        </div>
+
       </section>
-
-      <!-- STUB game -->
-      <!-- <section class="row">
-        <div class="col-10">
-          <div class="card elevation-3 text-center" id="fruit">
-            <h2>🍉</h2>
-            <textarea name="" id="" cols="5" rows="5"></textarea>
-          </div>
-        </div>
-      </section> -->
 
     </div>
 

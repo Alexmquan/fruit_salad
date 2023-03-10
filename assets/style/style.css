@@ -1,4 +1,16 @@
 /* BASIC STYLES HERE */
-.bg-img {
-  background-image: url();
+body {
+  background-image: url('../img/image7.jpg');
+}
+
+p {
+  margin: 0;
+}
+
+
+@media ((max-width:768px))  {
+  .reverse {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }

@@ -17,12 +17,13 @@ class AppState extends EventEmitter {
   ]
 
   /** @type {import('./Models/Player').Player|null} */
+  
+  activePlayer = null
 
 
-  fruits = ['pear', 'apple', 'banana']
+  fruits = ['🍐pear', '🍎apple', '🍌banana']
   activeFruit = null
 
-  activePlayer = null
 }
 
 export const appState = new Proxy(new AppState(), {
