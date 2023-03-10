@@ -1,3 +1,4 @@
+import { appState } from "../AppState.js"
 import { generateId } from "../Utils/generateId.js"
 
 export class Player {
@@ -20,10 +21,21 @@ export class Player {
                 <div class="col-6">
                   <p>Score: <span>${this.score}</span></p>
                 </div>
+
+                <section class="row">
+                <div class="col-10">
+                  <div class="card elevation-3 text-center" id="fruit">
+                    <!-- <h2>${appState.activeFruit}</h2> -->
+                    <textarea name="" id="" cols="5" rows="5"></textarea>
+                  </div>
+                </div>
+              </section>
     `
   }
 
-  get FruitTemplate() {
-    return ``
-  }
+  // get FruitTemplate() {
+  //   return `
+  //   <h2>${this.name}
+  //   <h2>${appState.activeFruit}</h2>`
+  // }
 }

@@ -16,16 +16,17 @@ function _drawActive() {
   setHTML('active', activePlayer.ActiveTemplate)
 }
 
-function _drawFruit() {
-  let activeFruit = 
-}
+// function _drawFruit() {
+//   let activeFruit = appState.activeFruit
+//   setHTML('fruit', activeFruit)
+// }
 
 export class PlayersController {
   constructor() {
-    this.selectFruit()
+
     _drawPlayer()
     appState.on('activePlayer', _drawActive)
-    appState.on('')
+    // appState.on('activeFruit', )
 
   }
 
